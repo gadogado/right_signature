@@ -26,8 +26,7 @@ end
 
 def rs_private_token_client
   RightSignature.configure do |rs|
-    rs.private_api_token = ENV['RS_PRIVATE_API_TOKEN']
-    rs.api_endpoint = 'https://api.rightsignature.com/public/v1'
+    rs.private_api_token = ENV['RS_PRIVATE_API_TOKEN'] || "test_token"
   end
   RightSignature
 end

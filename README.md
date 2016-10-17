@@ -2,11 +2,15 @@
 
 # The [RightSignature Sharefile Edition](https://sharefile.rightsignature.com/) SDK Ruby Gem
 
-A Ruby interface to the RightSignature Sharefile Edition API.
+A RightSignature Sharefile Edition client.
+
+Design and philosophy inspired by [octokit](https://github.com/octokit/octokit.rb).
 
 ## Installation
 
-`gem install right_signature`
+`gem install right_signature, git: 'git://github.com/gadogado/right_signature.git'`
+
+`Note: this will soon be available from the rubygems source`
 
 ## Configuration
 
@@ -86,3 +90,6 @@ RightSignature.me
 ```
 RightSignature.revoke_token
 ```
+
+#### API Status
+* This is a work in progress.  The RightSignature for Sharefile API is in an early phase of development and not officially released. As new features are rolled out I will support them here.  The current implementation of this gem is subject to change to match what is eventually officially released.
